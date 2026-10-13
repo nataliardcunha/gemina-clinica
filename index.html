@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gemina Clínica Médica</title>
+<link rel="icon" href="assets/logo.svg">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#inicio"><img src="assets/logo.svg" alt="" width="40" height="40"><span>Gemina</span></a>
+  <nav aria-label="Principal">
+    <a href="#sobre">Sobre</a><a href="#objetivos">Objetivos</a><a href="#marketing">Marketing</a><a href="#consultas">Minhas consultas</a>
+    <a class="btn" href="#agendar">Agendar consulta</a>
+  </nav>
+</header>
+
+<main>
+<section id="inicio" class="hero">
+  <div>
+    <h1>Agende sua consulta em poucos cliques</h1>
+    <p>Escolha a especialidade, a data e um horário livre. Cancele ou remarque com até 24h de antecedência.</p>
+    <a class="btn big" href="#agendar">Agendar consulta</a>
+  </div>
+  <img src="assets/logo.svg" alt="Logo da clínica Gemina" width="260" height="260">
+</section>
+
+<section id="sobre" class="wrap">
+  <h2>Sobre a clínica</h2>
+  <p class="lead">A Gemina atende em três especialidades, com um médico responsável por cada uma e duas secretárias para apoiar o atendimento. Consultas de 50 minutos, de segunda a sexta, das 8h às 18h.</p>
+  <div class="cards" id="especialidades"></div>
+</section>
+
+<section id="objetivos" class="wrap alt">
+  <h2>Objetivo geral</h2>
+  <p class="lead">Desenvolver um sistema web para a clínica Gemina que automatize o agendamento de consultas, hoje feito em planilha, e apresente a clínica ao público por meio de um site institucional.</p>
+  <h2>Objetivos específicos</h2>
+  <ul class="list">
+    <li>Permitir o cadastro e o login de pacientes e administradores (RF01).</li>
+    <li>Exibir as especialidades e as datas disponíveis (RF02).</li>
+    <li>Agendar, cancelar e remarcar consultas online, com antecedência mínima de 24h (RF03 e RF04).</li>
+    <li>Dar à secretaria controle de médicos, funcionários, agenda e consultas (RF05 a RF07).</li>
+    <li>Proteger os dados dos pacientes conforme a LGPD e funcionar bem no celular e no computador.</li>
+  </ul>
+</section>
+
+<section id="marketing" class="wrap">
+  <h2>Plano de marketing</h2>
+  <div class="cards">
+    <article><h3>Público-alvo</h3><p>Moradores da região que querem marcar consultas sem ligar nem ir até a clínica, principalmente quem usa o celular no dia a dia.</p></article>
+    <article><h3>Proposta de valor</h3><p>Agendamento online 24 horas por dia, em poucos cliques, com cancelamento e remarcação simples.</p></article>
+    <article><h3>Canais</h3><p>Site da clínica, Instagram, Google Meu Negócio e indicação de pacientes.</p></article>
+    <article><h3>Ações</h3><p>Conteúdo de saúde no site e nas redes, cartaz com QR code na recepção e divulgação do agendamento online aos pacientes atuais.</p></article>
+    <article><h3>Como medir</h3><p>Número de consultas agendadas pelo site, visitas ao site e consultas por especialidade.</p></article>
+  </div>
+</section>
+
+<section id="agendar" class="wrap alt">
+  <h2>Agendar consulta</h2>
+  <p class="lead">Protótipo do fluxo principal. Os dados ficam salvos só neste navegador.</p>
+  <ol class="steps">
+    <li><h3>1. Especialidade</h3><div id="optEsp" class="opts"></div></li>
+    <li><h3>2. Data</h3><div id="optData" class="opts"><p class="hint">Escolha uma especialidade primeiro.</p></div></li>
+    <li><h3>3. Horário</h3><div id="optHora" class="opts"><p class="hint">Escolha uma data primeiro.</p></div></li>
+  </ol>
+  <form id="confirma" class="confirma" hidden>
+    <h3>4. Confirmar a consulta</h3>
+    <p id="resumo"></p>
+    <label>Nome do paciente <input id="nome" required autocomplete="name"></label>
+    <label>E-mail <input id="email" type="email" required autocomplete="email"></label>
+    <button class="btn big" type="submit">Confirmar consulta</button>
+  </form>
+  <p id="msg" role="status"></p>
+</section>
+
+<section id="consultas" class="wrap">
+  <h2>Minhas consultas</h2>
+  <div id="lista"></div>
+</section>
+</main>
+
+<footer>
+  <p>Gemina Clínica Médica · Engenharia Web 2026/2 · Grupo 2</p>
+  <p>Geovane Silva Segundo, Maria Mikaelly Soares Medeiros, Natalia Rodrigues Cunha e Quézia Keilla de Oliveira Pegô</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
