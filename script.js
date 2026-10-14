@@ -1,8 +1,9 @@
 // ===== DADOS DA CLÍNICA: edite aqui especialidades e médicos =====
 const ESPECIALIDADES = [
-  { id: 'geral', nome: 'Clínica Geral', medico: 'Dr(a). [nome do médico]', desc: 'Check-ups, queixas do dia a dia e encaminhamentos.' },
-  { id: 'pediatria', nome: 'Pediatria', medico: 'Dr(a). [nome do médico]', desc: 'Acompanhamento da saúde de crianças e adolescentes.' },
-  { id: 'dermato', nome: 'Dermatologia', medico: 'Dr(a). [nome do médico]', desc: 'Cuidados com a pele, os cabelos e as unhas.' },
+  { id: 'geral', nome: 'Web Developer', medico: 'Geovane Silva Segundo', desc: 'Check-ups, queixas do dia a dia e encaminhamentos.' },
+  { id: 'pediatria', nome: 'Product Owner', medico: 'Maria Mikaelly Soares Medeiros', desc: 'Acompanhamento da saúde de crianças e adolescentes.' },
+  { id: 'dermato', nome: 'Web Designer', medico: 'Natalia Rodrigues Cunha', desc: 'Cuidados com a pele, os cabelos e as unhas.' },
+  { id: 'nutri', nome: 'Analista de Requisitos', medico: 'Quézia Keilla de Oliveira Pêgo', desc: 'Orientações sobre alimentação e hábitos saudáveis.' }
 ];
 const DURACAO = 50;            // minutos por consulta
 const INICIO = 8 * 60, FIM = 18 * 60; // 8h às 18h
