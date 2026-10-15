@@ -3,86 +3,146 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gemina Webapps</title>
+<title>Gemina Clínica Médica</title>
+<meta name="description" content="Gemina Clínica Médica: atendimento humano, acolhedor e de confiança.">
 <link rel="icon" href="assets/logo.svg">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!-- Ícones (usados com <use href="#nome">) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<symbol id="seta" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="tel" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="relogio" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+<symbol id="email" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+<symbol id="insta" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+<symbol id="coracao" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+<symbol id="olho" viewBox="0 0 24 24"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="gema" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></symbol>
+<symbol id="grupo" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+<symbol id="estetoscopio" viewBox="0 0 24 24"><path d="M11 2v2M5 2v2"/><path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"/><path d="M8 15a6 6 0 0 0 12 0v-3"/><circle cx="20" cy="10" r="2"/></symbol>
+</g>
+</svg>
+
 <header class="top">
-  <a class="brand" href="#inicio"><img src="assets/logo.svg" alt="" width="40" height="40"><span>Gemina</span></a>
-  <nav aria-label="Principal">
-    <a href="#sobre">Sobre</a><a href="#objetivos">Objetivos</a><a href="#marketing">Marketing</a><a href="#consultas">Minhas consultas</a>
-    <a class="btn" href="#agendar">Agendar consulta</a>
-  </nav>
+  <div class="w">
+    <a class="brand" href="#inicio"><img src="assets/logo.svg" alt="" width="40" height="40"><span>Gemina</span></a>
+    <nav aria-label="Principal">
+      <a href="#inicio">Início</a><a href="#sobre">Sobre nós</a><a href="#medicos">Médicos</a><a href="#equipe">Equipe</a>
+      <a class="btn" href="#contato">Fale conosco <svg class="i"><use href="#seta"/></svg></a>
+    </nav>
+  </div>
 </header>
 
 <main>
+<!-- INÍCIO. Foto: assets/hero.jpg (sem ela, aparece só o degradê azul) -->
 <section id="inicio" class="hero">
-  <div>
-    <h1>Aplicações Web simples, úteis e feitas sob medida</h1>
-    <p>Desenvolvemos aplicações Web de qualidade que automatizem processos e facilitem o dia a dia dos nossos clientes.</p>
-    <a class="btn big" href="#agendar">Agendar consulta</a>
-  </div>
-  <img src="assets/logo.svg" alt="Logo da clínica Gemina" width="260" height="260">
-</section>
-
-<section id="sobre" class="wrap">
-  <h2>Sobre nós</h2>
-  <p class="lead">A Gemina desenvolve soluções digitais para otimizar todo o processo de atendimento online. Desenvolvemos sistemas Web sob medida para pequenos negócios e serviços de saúde, ouvindo o cliente em cada etapa do projeto.</p>
-  <div class="cards" id="especialidades"></div>
-</section>
-
-<section id="objetivos" class="wrap alt">
-  <h2>Objetivo geral</h2>
-  <p class="lead">Automatizar o agendamento de consultas de uma clínica (especialidades, médicos e datas disponíveis).</p>
-  <h2>Objetivos específicos</h2>
-  <ul class="list">
-    <li>Permitir o cadastro e o login de pacientes e administradores (RF01).</li>
-    <li>Exibir as especialidades e as datas disponíveis (RF02).</li>
-    <li>Agendar, cancelar e remarcar consultas online, com antecedência mínima de 24h (RF03 e RF04).</li>
-    <li>Dar à secretaria controle de médicos, funcionários, agenda e consultas (RF05 a RF07).</li>
-    <li>Proteger os dados dos pacientes conforme a LGPD e funcionar bem no celular e no computador.</li>
-  </ul>
-</section>
-
-<section id="marketing" class="wrap">
-  <h2>Plano de marketing</h2>
-  <div class="cards">
-    <article><h3>Missão</h3><p>Desenvolver aplicações Web simples, úteis e de qualidade, que automatizem processos e facilitem o dia a dia dos nossos clientes.</p></article>
-    <article><h3>Visão</h3><p>Ser reconhecida como uma empresa de software confiável na região dos Vales do Jequitinhonha e Mucuri.</p></article>
-    <article><h3>Valores</h3><p>Compromisso com o cliente, etica e transparência, trabalho em equipe, qualidade e aprendizado contínuo</p></article>
+  <span class="mancha" style="top:-140px;right:-120px;width:440px;height:440px" aria-hidden="true"></span>
+  <span class="curva" style="left:-70px;bottom:-70px;width:230px;height:230px" aria-hidden="true"></span>
+  <i class="mais" style="left:28px;bottom:36px" aria-hidden="true"></i>
+  <div class="w">
+    <div class="txt">
+      <span class="selo"><svg class="i"><use href="#estetoscopio"/></svg>Gemina Clínica Médica</span>
+      <h1>Cuidar de você, com <em>atenção em cada consulta</em></h1>
+      <p>A Gemina Clínica Médica reúne especialistas dedicados a um atendimento humano, acolhedor e de confiança.</p>
+      <div class="botoes">
+        <a class="btn big" href="#sobre">Conheça a clínica <svg class="i"><use href="#seta"/></svg></a>
+        <a class="btn big borda" href="#contato">Fale conosco</a>
+      </div>
+    </div>
+    <div class="foto-hero"><img src="assets/hero.jpg" alt="Equipe médica da Gemina" onerror="this.remove()"></div>
   </div>
 </section>
 
-<section id="agendar" class="wrap alt">
-  <h2>Agendar consulta</h2>
-  <p class="lead">Protótipo do fluxo principal. Os dados ficam salvos só neste navegador.</p>
-  <ol class="steps">
-    <li><h3>1. Especialidade</h3><div id="optEsp" class="opts"></div></li>
-    <li><h3>2. Data</h3><div id="optData" class="opts"><p class="hint">Escolha uma especialidade primeiro.</p></div></li>
-    <li><h3>3. Horário</h3><div id="optHora" class="opts"><p class="hint">Escolha uma data primeiro.</p></div></li>
-  </ol>
-  <form id="confirma" class="confirma" hidden>
-    <h3>4. Confirmar a consulta</h3>
-    <p id="resumo"></p>
-    <label>Nome do paciente <input id="nome" required autocomplete="name"></label>
-    <label>E-mail <input id="email" type="email" required autocomplete="email"></label>
-    <button class="btn big" type="submit">Confirmar consulta</button>
-  </form>
-  <p id="msg" role="status"></p>
+<!-- SOBRE NÓS: missão, visão e valores -->
+<section id="sobre">
+  <span class="mancha" style="top:-120px;right:-100px;width:320px;height:320px" aria-hidden="true"></span>
+  <i class="mais" style="right:60px;top:40px" aria-hidden="true"></i>
+  <div class="w">
+    <span class="selo"><svg class="i"><use href="#coracao"/></svg>Sobre nós</span>
+    <h2>Sobre nós</h2>
+    <p class="sub">A Gemina nasceu para aproximar o cuidado com a saúde das pessoas. Em cada atendimento, unimos escuta, conhecimento e respeito.</p>
+    <div class="cards">
+      <article class="valor"><div class="topo"><span class="ico"><svg class="i"><use href="#estetoscopio"/></svg></span><h3>Missão</h3></div><p>Oferecer atendimento médico humanizado e de qualidade, cuidando de cada paciente com atenção e respeito.</p></article>
+      <article class="valor"><div class="topo"><span class="ico"><svg class="i"><use href="#olho"/></svg></span><h3>Visão</h3></div><p>Ser reconhecida como uma clínica de confiança na região dos Vales do Jequitinhonha e Mucuri.</p></article>
+      <article class="valor"><div class="topo"><span class="ico"><svg class="i"><use href="#gema"/></svg></span><h3>Valores</h3></div><p>Compromisso com o paciente, ética e transparência, trabalho em equipe, qualidade e aprendizado contínuo.</p></article>
+    </div>
+  </div>
 </section>
 
-<section id="consultas" class="wrap">
-  <h2>Minhas consultas</h2>
-  <div id="lista"></div>
+<!-- MÉDICOS. Fotos em assets/medicos/ (sem foto, aparece a inicial) -->
+<section id="medicos">
+  <i class="mais" style="left:24px;top:60px" aria-hidden="true"></i>
+  <span class="curva" style="right:-90px;bottom:-90px;width:260px;height:260px" aria-hidden="true"></span>
+  <div class="w">
+    <span class="selo"><svg class="i"><use href="#estetoscopio"/></svg>Nossos médicos</span>
+    <h2>Nossos médicos</h2>
+    <p class="sub">Profissionais especializados, com atendimento próximo.</p>
+    <div class="cards">
+      <article class="pessoa"><div class="avatar"><span>DA</span><img src="assets/medicos/medica-1.jpg" alt="Foto da Dra. Laura Veloso" onerror="this.remove()"></div><strong>Dra. Laura Veloso</strong><span>Pediatra</span></article>
+      <article class="pessoa"><div class="avatar escuro"><span>DR</span><img src="assets/medicos/medico-1.jpg" alt="Foto do Dr. Bruno Correa" onerror="this.remove()"></div><strong>Dr. Bruno Correa</strong><span>Psicólogo</span></article>
+      <article class="pessoa"><div class="avatar"><span>DA</span><img src="assets/medicos/medica-2.jpg" alt="Foto da Dra. Paula Cordeiro" onerror="this.remove()"></div><strong>Dra. Paula Cordeiro</strong><span>Psiquiatra</span></article>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPE: só o círculo com a inicial, por enquanto -->
+<section id="equipe">
+  <span class="mancha" style="left:-120px;bottom:-130px;width:320px;height:320px;background:#D8E8FB" aria-hidden="true"></span>
+  <i class="mais" style="right:40px;top:48px" aria-hidden="true"></i>
+  <div class="w">
+    <span class="selo"><svg class="i"><use href="#grupo"/></svg>Nossa equipe</span>
+    <h2>Nossa equipe</h2>
+    <p class="sub">Quem cuida da Gemina todos os dias.</p>
+    <div class="cards">
+      <article class="pessoa"><div class="avatar escuro">G</div><div><strong>Geovane Silva Segundo</strong><span>Direção geral</span></div></article>
+      <article class="pessoa"><div class="avatar">M</div><div><strong>Maria Mikaelly Soares Medeiros</strong><span>Coordenação médica</span></div></article>
+      <article class="pessoa"><div class="avatar escuro">N</div><div><strong>Natalia Rodrigues Cunha</strong><span>Coordenação administrativa</span></div></article>
+      <article class="pessoa"><div class="avatar">Q</div><div><strong>Quézia Keilla de Oliveira Pêgo</strong><span>Marketing e atendimento</span></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO: troque os dados de exemplo pelos da clínica -->
+<section id="contato">
+  <div class="w">
+    <div class="painel">
+      <div class="info">
+        <h2>Fale conosco</h2>
+        <div class="dado"><svg class="i"><use href="#pin"/></svg><div><small>ENDEREÇO</small><span>Rua Exemplo, 123 · Centro</span></div></div>
+        <div class="dado"><svg class="i"><use href="#tel"/></svg><div><small>TELEFONE</small><span>(00) 0000-0000</span></div></div>
+        <div class="dado"><svg class="i"><use href="#relogio"/></svg><div><small>HORÁRIO</small><span>Segunda a sexta, das 8h às 18h</span></div></div>
+        <div class="dado"><svg class="i"><use href="#email"/></svg><div><small>E-MAIL</small><span>contato@gemina.com</span></div></div>
+        <div class="dado"><svg class="i"><use href="#insta"/></svg><div><small>INSTAGRAM</small><span>@geminaclinica</span></div></div>
+      </div>
+      <!-- Sem servidor: o botão abre o aplicativo de e-mail já preenchido -->
+      <form class="sugestao" action="mailto:contato@gemina.com" method="get" enctype="text/plain">
+        <h3>Envie sua sugestão</h3>
+        <label>Assunto <input name="subject" placeholder="Digite o assunto" required></label>
+        <label>Sua sugestão <textarea name="body" placeholder="Escreva aqui sua sugestão..." required></textarea></label>
+        <button class="btn big" type="submit">Enviar sugestão</button>
+      </form>
+    </div>
+  </div>
 </section>
 </main>
 
 <footer>
-  <p>Gemina Webapps · Engenharia Web 2026/2 · Grupo 2</p>
-  <p>Geovane Silva Segundo, Maria Mikaelly Soares Medeiros, Natalia Rodrigues Cunha e Quézia Keilla de Oliveira Pêgo</p>
+  <div class="w">
+    <span class="brand"><img src="assets/logo.svg" alt="" width="36" height="36">Gemina Clínica Médica</span>
+    <small>© 2026 Gemina · @geminaclinica</small>
+  </div>
 </footer>
-<script src="script.js"></script>
+
+<script>
+/* Sublinha no menu a seção que está na tela */
+const links=[...document.querySelectorAll('nav a:not(.btn)')];
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(l=>l.setAttribute('aria-current',l.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('main section[id]').forEach(s=>obs.observe(s));
+</script>
 </body>
 </html>
